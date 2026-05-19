@@ -110,8 +110,8 @@ if torch.cuda.is_available():
     model.to(device)
 
 # Print model summary
-print('Name: Syed Mohamed Raihan')
-print('Register Number: 212224240167')
+print('Name: Aadhith S')
+print('Register Number: 212224220002')
 summary(model, input_size=(1, 28, 28))
 
 # Initialize model, loss function, and optimizer
@@ -132,8 +132,8 @@ def train_model(model, train_loader, num_epochs=3):
         optimizer.step()
         running_loss += loss.item()
 
-    print('Name:Syed Mohamed RaihanT')
-    print('Register Number: 212224240167')
+    print('Name:Aadhith S')
+    print('Register Number: 212224220002')
     print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {running_loss/len(train_loader):.4f}')
 
 # Train the model
@@ -157,15 +157,15 @@ def test_model(model, test_loader):
             all_labels.extend(labels.cpu().numpy())
 
     accuracy = correct / total
-    print('Name: Syed Mohamed Raihan')
-    print('Register Number: 212224240167')
+    print('Name: Aadhith S')
+    print('Register Number: 212224220002')
     print(f'Test Accuracy: {accuracy:.4f}')
 
     # Compute confusion matrix
     cm = confusion_matrix(all_labels, all_preds)
     plt.figure(figsize=(8, 6))
-    print('Name: Syed Mohamed Raihan')
-    print('Register Number: 212224240167')
+    print('Name: Aadhith S')
+    print('Register Number: 212224220002')
     sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=test_dataset.classes, yticklabels=test_dataset.classes)
     plt.xlabel('Predicted')
     plt.ylabel('Actual')
@@ -173,8 +173,8 @@ def test_model(model, test_loader):
     plt.show()
 
     # Print classification report
-    print('Name: Syed Mohamed Raihan')
-    print('Register Number: 212224240167')
+    print('Name: Aadhith S')
+    print('Register Number: 212224220002')
     print("Classification Report:")
     print(classification_report(all_labels, all_preds, target_names=test_dataset.classes))
 
@@ -208,9 +208,6 @@ predict_image(model, image_index=331, dataset=test_dataset)
 
 ### OUTPUT
 
-## Training Loss per Epoch
-
-<img width="383" height="164" alt="image" src="https://github.com/user-attachments/assets/5e57c6a3-181e-4714-b9a5-48c6b50f0275" />
 
 
 ## Confusion Matrix
